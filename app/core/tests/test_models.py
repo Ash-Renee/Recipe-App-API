@@ -12,7 +12,6 @@ class ModelTests(TestCase):
             email=email,
             password=password
         )
-
         self.assertEqual(user.email, email)
         self.assertTrue(user.check_password(password))
 
@@ -21,7 +20,6 @@ class ModelTests(TestCase):
         # test the email for a new user is normalized
         email = 'test@LONDONAPPDEV.COM'
         user = get_user_model().objects.create_user(email, 'sdffdsfs')
-
         self.assertEqual(user.email, email.lower())
 
 
@@ -37,7 +35,5 @@ class ModelTests(TestCase):
             'test@londonappdev.com',
             'test123'
         )
-
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
-        #comment added for git push
