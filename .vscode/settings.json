@@ -1,0 +1,10 @@
+{
+    "editor.semanticTokenColorCustomizations": null,
+    "editor.tokenColorCustomizations": null,
+    "workbench.colorCustomizations": {
+    
+        "[Kawaii Theme]": {}
+    
+    },
+    "workbench.preferredLightColorTheme": "Kawaii Theme"
+}
